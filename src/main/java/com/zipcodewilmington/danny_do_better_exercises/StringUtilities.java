@@ -34,7 +34,7 @@ public class StringUtilities {
      * @return the first 3 characters of `input`
      */
     public static String getPrefix(String input){
-        return null;
+        return input.substring(0,3);
 
 
     }
@@ -44,7 +44,7 @@ public class StringUtilities {
      * @return the last 3 characters of `input`
      */
     public static String getSuffix(String input){
-        return null;
+        return input.substring(2,5);
     }
 
     /**
@@ -62,7 +62,7 @@ public class StringUtilities {
      * @return the middle character of `inputValue`
      */
     public static Character getMiddleCharacter(String inputValue){
-        return null;
+        return inputValue.charAt(inputValue.length() / 2 - 1);
     }
 
     /**
@@ -86,6 +86,10 @@ public class StringUtilities {
      * @return an identical string with characters in reverse order.
      */
     public static String reverse(String stringToReverse){
-        return null;
+        StringBuilder sb = new StringBuilder(stringToReverse);
+        sb.reverse();
+        return sb.toString();
+
+
     }
 }
