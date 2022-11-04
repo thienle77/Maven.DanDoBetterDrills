@@ -1,5 +1,8 @@
 package com.zipcodewilmington.danny_do_better_exercises;
 
+import java.sql.Array;
+import java.util.Arrays;
+
 /**
  * Created by dan on 6/14/17.
  */
@@ -70,7 +73,9 @@ public class StringUtilities {
      * @return the first sequence of characters
      */
     public static String getFirstWord(String spaceDelimitedString){
-        return null;
+        String[] string = spaceDelimitedString.split(" ");
+        return string[0];
+
     }
 
     /**
@@ -78,7 +83,8 @@ public class StringUtilities {
      * @return the second word of a string delimited by spaces.
      */
     public static String getSecondWord(String spaceDelimitedString){
-        return null;
+        String[] string = spaceDelimitedString.split(" " );
+        return string[1];
     }
 
     /**
